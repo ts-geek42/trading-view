@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import React from "react";
 
 const TradingViewChart = dynamic(
-  () => import("../../components/test/TradingViewChart"),
+  () => import("../../modules/test/TradingViewChart"),
   { ssr: false }
 );
 
