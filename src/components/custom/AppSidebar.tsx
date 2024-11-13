@@ -1,4 +1,11 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
+import {
+  ChartCandlestick,
+  ChartLine,
+  BarChartHorizontal,
+  ChartArea,
+  ChartBar,
+  LineChartIcon,
+} from "lucide-react";
 
 import {
   Sidebar,
@@ -14,29 +21,34 @@ import {
 // Menu items.
 const items = [
   {
-    title: "Home",
-    url: "#",
-    icon: Home,
+    title: "Area",
+    url: "/area",
+    icon: ChartArea,
   },
   {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
+    title: "Bar",
+    url: "/bar",
+    icon: ChartBar,
   },
   {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
+    title: "Baseline",
+    url: "/baseline",
+    icon: LineChartIcon,
   },
   {
-    title: "Search",
-    url: "#",
-    icon: Search,
+    title: "CandleStick",
+    url: "/candle-stick",
+    icon: ChartCandlestick,
   },
   {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
+    title: "Histogram",
+    url: "/histogram",
+    icon: BarChartHorizontal,
+  },
+  {
+    title: "Line",
+    url: "/line",
+    icon: ChartLine,
   },
 ];
 
@@ -45,7 +57,7 @@ const AppSidebar = () => {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel>Lightweight Charts</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
