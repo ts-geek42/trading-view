@@ -26,14 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script type="text/javascript" src="https://s3.tradingview.com/tv.js" />
+        {/* <script type="text/javascript" src="https://s3.tradingview.com/tv.js" /> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
-      <script type="text/javascript" src="https://s3.tradingview.com/tv.js" />
+      {/* <script type="text/javascript" src="https://s3.tradingview.com/tv.js" /> */}
     </html>
   );
 }

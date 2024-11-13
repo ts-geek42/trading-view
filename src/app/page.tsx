@@ -18,9 +18,12 @@ const HomePage: React.FC = () => {
 
     // Add more data points here
   ];
-  const TradingChart = dynamic(() => import("../components/TradingChart"), {
-    ssr: false,
-  });
+  const TradingChart = dynamic(
+    () => import("../components/test/TradingChart"),
+    {
+      ssr: false,
+    }
+  );
   return (
     <div className="flex flex-col items-center bg-gray-50 min-h-screen">
       <h1 className="text-2xl font-bold mb-4">Trading Chart</h1>

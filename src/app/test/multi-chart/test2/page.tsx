@@ -1,6 +1,6 @@
 import React from "react";
 import { LineData, HistogramData } from "lightweight-charts";
-import TradingChart4 from "@/components/TradingChart4";
+import TradingChart4 from "@/components/test/TradingChart4";
 
 const HomePage: React.FC = () => {
   const priceData: LineData[] = [
