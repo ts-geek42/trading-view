@@ -36,8 +36,8 @@ const items = [
     icon: LineChartIcon,
   },
   {
-    title: "CandleStick",
-    url: "/candle-stick",
+    title: "Candlestick",
+    url: "/candlestick",
     icon: ChartCandlestick,
   },
   {
