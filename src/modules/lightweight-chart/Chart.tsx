@@ -8,6 +8,7 @@ interface SeriesData {
   data: any[];
   color?: string;
   seriesType?: SeriesType;
+  seriesProps?: any;
 }
 
 interface ChartProps {
@@ -45,6 +46,7 @@ const Chart: React.FC<ChartProps> = ({
           color:
             item.color ||
             `#${Math.floor(Math.random() * 16777215).toString(16)}`,
+          ...item.seriesProps,
         }
       );
       series.setData(item.data);
